@@ -1,6 +1,12 @@
 # python-telegram-bot library
 from telegram import Update, ForceReply, File
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+from telegram.ext import (
+    Updater,
+    CommandHandler,
+    MessageHandler,
+    Filters,
+    CallbackContext,
+)
 
 # google library for communication with google vision api
 from google.oauth2 import service_account
@@ -22,7 +28,7 @@ class Commands:
 
         # Send message
         update.message.reply_markdown_v2(
-            fr'Hi {user.mention_markdown_v2()}\! Send me picture that contains text',
+            fr"Hi {user.mention_markdown_v2()}\! Send me picture that contains text",
         )
 
     @staticmethod
@@ -30,14 +36,18 @@ class Commands:
         """Send a message when user cliked /help"""
 
         # Send message
-        update.message.reply_text('To get started, just send me a picture containing text in any language')
+        update.message.reply_text(
+            "To get started, just send me a picture containing text in any language"
+        )
 
     @staticmethod
     def text_command(update: Update, _: CallbackContext) -> None:
         """Reply to user message"""
 
         # Send message
-        update.message.reply_text('To get started, just send me a picture containing text in any language')
+        update.message.reply_text(
+            "To get started, just send me a picture containing text in any language"
+        )
 
     @staticmethod
     def document_command(update: Update, _: CallbackContext) -> None:
@@ -72,7 +82,7 @@ def start(args: dict) -> None:
     """Start the bot and google api connection"""
 
     # Connect to telegram. Get updater
-    updater = Updater(token=args['telegram_key'])
+    updater = Updater(token=args["telegram_key"])
     dispatcher = updater.dispatcher
 
     # Add command handlers - simple text answers
@@ -86,7 +96,9 @@ def start(args: dict) -> None:
     dispatcher.add_handler(MessageHandler(Filters.photo, Commands.image_command))
 
     # Connect to google vision api
-    credentials = service_account.Credentials.from_service_account_file(args['google_keys_json_path'])
+    credentials = service_account.Credentials.from_service_account_file(
+        args["google_keys_json_path"]
+    )
     client = vision.ImageAnnotatorClient(credentials=credentials)
 
     # Add client field to Ocr class

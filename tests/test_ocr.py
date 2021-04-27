@@ -7,8 +7,10 @@ from image_to_text_bot.ocr_api import Ocr
 # google library for communication with google vision api
 from google.cloud import vision
 
+
 class ClientMock:
     """Client class mock for testing"""
+
     def __init__(self, text: str) -> None:
         """Init function"""
         self.text = text
@@ -20,15 +22,19 @@ class ClientMock:
         x.full_text_annotation.text = self.text
         return x
 
+
 class FileMock:
     """File class mock for testing"""
+
     @staticmethod
     def download(file_path: str) -> None:
         """Download image. Do nothing"""
         pass
 
+
 class TestOcr(unittest.TestCase):
     """Main testing class"""
+
     def test_ocr(self):
         """Testing ocr class. Simple test to check return"""
 
