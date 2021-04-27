@@ -11,7 +11,10 @@ if __name__ == "__main__":
         "--telegram_key", type=str, default="", help="Telegram key from BotFather"
     )
     parser.add_argument(
-        "--google_keys_json_path", type=str, default="google_keys.json", help="Path to json file from google cload vision api"
+        "--google_keys_json_path",
+        type=str,
+        default="google_keys.json",
+        help="Path to json file from google cload vision api",
     )
     args = parser.parse_args()
 
