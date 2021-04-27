@@ -1,3 +1,2 @@
-google-cloud-vision
-python-telegram-bot
-argparse
+google-cloud-vision==2.3.1
+python-telegram-bot==13.4.1
