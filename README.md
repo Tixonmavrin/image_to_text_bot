@@ -17,7 +17,7 @@ python main.py --telegram_key 123:AA_BB_CC_DD \
                --google_keys_json_path google_keys.json
 ```
 - telegram_key: telegram api key for your bot. Write @BotFather in telegram to get it
-- google_keys_json_path: google cloud vision api keys (you can download json file from their site)
+- google_keys_json_path: google cloud vision api keys json file path (you can download json file from their site)
 
 # Requirements
 ```
