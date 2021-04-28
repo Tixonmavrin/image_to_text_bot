@@ -5,7 +5,7 @@
 <a href="https://github.com/Tixonmavrin/image_to_text_bot/actions"><img alt="Actions Status" src="https://github.com/Tixonmavrin/image_to_text_bot/workflows/Lint/badge.svg"></a>
 <a href="https://github.com/Tixonmavrin/image_to_text_bot/actions"><img alt="Actions Status" src="https://github.com/Tixonmavrin/image_to_text_bot/workflows/Changelog/badge.svg"></a>
 
-#Get started
+# Get started
 ```
 python3 -m venv --system-site-packages ./venv
 source ./venv/bin/activate
