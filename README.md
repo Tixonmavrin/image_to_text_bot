@@ -1,6 +1,9 @@
 # Image to text telegram bot
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+<a href="https://github.com/Tixonmavrin/image_to_text_bot/actions"><img alt="Actions Status" src="https://github.com/Tixonmavrin/image_to_text_bot/workflows/Test/badge.svg"></a>
+<a href="https://github.com/Tixonmavrin/image_to_text_bot/actions"><img alt="Actions Status" src="https://github.com/Tixonmavrin/image_to_text_bot/workflows/Lint/badge.svg"></a>
+<a href="https://github.com/Tixonmavrin/image_to_text_bot/actions"><img alt="Actions Status" src="https://github.com/Tixonmavrin/image_to_text_bot/workflows/Changelog/badge.svg"></a>
 
 # Get started
 ```
