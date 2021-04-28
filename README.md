@@ -1,5 +1,7 @@
 # Image to text telegram bot
 
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 # Get started
 ```
 python3 -m venv --system-site-packages ./venv
