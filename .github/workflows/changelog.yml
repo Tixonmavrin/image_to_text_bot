@@ -1,8 +1,10 @@
 # Change log
 name: changelog
 
-# Start on push and pull requests
-on: [push, pull_request]
+# Start on pull requests
+on:
+  pull_request:
+    types: [opened, synchronize, labeled, unlabeled, reopened]
 
 # Jobs
 jobs:
