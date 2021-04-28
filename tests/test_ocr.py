@@ -35,7 +35,7 @@ class FileMock:
 class TestOcr(unittest.TestCase):
     """Main testing class"""
 
-    def test_ocr(self):
+    def test_ocr(self) -> None:
         """Testing ocr class. Simple test to check return"""
 
         # Set result text
