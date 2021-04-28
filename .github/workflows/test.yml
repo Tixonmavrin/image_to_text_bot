@@ -1,5 +1,5 @@
 # Workflow name
-name: image_to_text_bot_workflow
+name: Test
 
 # Start testing on push and pull_request
 on: [push, pull_request]
