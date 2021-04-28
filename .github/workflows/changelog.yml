@@ -30,4 +30,3 @@ jobs:
           grep -Pz "\((\n\s*)?#${{ github.event.pull_request.number }}(\n\s*)?\)" CHANGES.md || \
           (echo "Please add '(#${{ github.event.pull_request.number }})' change line to CHANGES.md" && \
           exit 1)
-

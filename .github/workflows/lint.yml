@@ -26,4 +26,3 @@ jobs:
       - uses: psf/black@stable
         with:
           args: ". --check"
-
